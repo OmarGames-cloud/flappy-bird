@@ -1112,6 +1112,25 @@ canvas.addEventListener(
 
     e.preventDefault();
 
+    if(state==="menu"){
+      start();
+      return;
+    }
+
+    if(state==="gameover"){
+      start();
+      return;
+    }
+
+    if(state==="paused"){
+      return;
+    }
+
+    flap();
+  }
+);
+    e.preventDefault();
+
     if(state==="menu")
       start();
 
